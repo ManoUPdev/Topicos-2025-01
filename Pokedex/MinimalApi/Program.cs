@@ -1,44 +1,29 @@
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+// Lista de pokemons inciais pelo menos uma demonstração
+var pokemons = new List<Pokemon>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    
+    new Pokemon { Numero = 1, Nome = "Bulbasaur", Tipo = "Grama" },
+    new Pokemon { Numero = 2, Nome = "Ivysaur", Tipo = "Grama/Venenoso" },
+    new Pokemon { Numero = 3, Nome = "Venusaur", Tipo = "Grama/Venenoso" },
+    new Pokemon { Numero = 4, Nome = "Charmander", Tipo = "Fogo" },
+    new Pokemon { Numero = 5, Nome = "Charmeleon", Tipo = "Fogo" },
+    new Pokemon { Numero = 6, Nome = "Charizard", Tipo = "Fogo/Voador" }
 }
 
-app.UseHttpsRedirection();
-
-var summaries = new[]
+//Endpoint para listar todos os pokemons disponiveis
+app.MapGet("/pokemons", () =>
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+    return Results.Ok(pokemons)
+}
 
-app.MapGet("/weatherforecast", () =>
+//Endpoint para pegar um pokemon
+app.Map("/pokemons/{numero}"), (int numero) =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast")
-.WithOpenApi();
+    var pokemon
+    return pokemon is not null ? Results.Ok(pokemon) : Results.NotFound();  
+});
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
