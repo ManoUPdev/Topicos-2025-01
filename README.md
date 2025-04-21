@@ -8,42 +8,43 @@ No desenvolvimento C#, uma solution serve como um contêiner que reúne projetos
 
 Comandos:
 
-Criação de uma Solução 
+Criação de uma Solução: 
 dotnet new sln --output MySolution
 
-Criação de uma aplicação console 
+Criação de uma aplicação console: 
 dotnet new console --name NomeDoProjeto
 
-Criação de uma aplicação console com o método Main 
+Criação de uma aplicação console com o método Main: 
 dotnet new console --name NomeDoProjeto –use-program-main
 
-Criação de uma aplicação console escolhendo a versão do .NET 
+Criação de uma aplicação console escolhendo a versão do .NET: 
 dotnet new console --name NomeDoProjeto -f net8.0
 
-Criação de uma aplicação Web API 
+Criação de uma aplicação Web API: 
 dotnet new webapi --name NomeDoProjeto -f net8.0
 
-Adicionando um projeto dentro de uma solução 
+Adicionando um projeto dentro de uma solução: 
 dotnet sln add NomeDoProjeto
 
-Rodar uma aplicação 
+Rodar uma aplicação: 
 dotnet run
 
-Rodar uma aplicação com o watch 
+Rodar uma aplicação com o watch: 
 dotnet watch run
 
-Restaura as dependências e as ferramentas de um projeto. 
+Restaura as dependências e as ferramentas de um projeto: 
 dotnet restore
 
-Adiciona uma referência de pacote a um projeto. 
+Adiciona uma referência de pacote a um projeto:
 dotnet add package NomeDoPacote
-Instalar a ferramenta de gerenciamento do Entity Framework 
+
+Instalar a ferramenta de gerenciamento do Entity Framework: 
 dotnet tool install --global dotnet-ef --version x
 
-Adicionar uma nova migração 
+Adicionar uma nova migração: 
 dotnet ef migrations add NomeMigracao
 
-Atualizar o banco de dados conforme a última migração 
+Atualizar o banco de dados conforme a última migração: 
 dotnet ef database update
 
 
@@ -53,7 +54,6 @@ React é uma biblioteca de JavaScript de código aberto utilizada para a constru
 
 	
 Criar uma aplicação em React: 
-
 npx create-react-app my-app --template typescript
 
 Rodar a aplicação: 
