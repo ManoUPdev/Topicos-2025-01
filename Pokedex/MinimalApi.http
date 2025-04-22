@@ -1,0 +1,9 @@
+@MinimalApi_HostAddress = http://localhost:5098
+
+GET {{MinimalApi_HostAddress}}/pokemons
+http://localhost:5098/pokemons
+Accept: application/json
+
+
+GET {{MinimalApi_HostAddress}}/pokemons/1
+http://localhost:5098/pokemons/1
