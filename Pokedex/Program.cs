@@ -21,17 +21,7 @@ var pokemons = new List<Pokemon>
 };
 
 // Endpoint para listar todos os pokémons
-app.MapGet ("/pokemons", () =>
-{
-return Results.Ok(pokemons);
 
-});
-
-app.MapGet("/pokemons/{id}", ( int id) =>
-
-{
-var pokemon = pokemons.FirstOrDefault(p => p.Id == id);
-return pokemon is not null ? Results.Ok(pokemon) : Results.NotFound();
 });
 
 
