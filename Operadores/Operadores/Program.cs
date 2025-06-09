@@ -11,32 +11,31 @@ namespace Operadores
         static void Main(string[] args)
         {
 
-
-          // Operadores de Atribuicao, ou seja, operadores que atribuem valores a variaveis  
+   
           // Operadores condicioanais, ou seja, operadores que comparam valores e retornam verdadeiro ou falso
           //usando if, else if e else (exemplo)
 
-          int a = 10;
-          int b = 20;
-          int c = 2;
+          // int a = 10;
+          // int b = 20;
+          // int c = 2;
 
          
-          if (a > b) //SE 
-          {
-            Console.WriteLine("E VERDADE!");
-          }
+          // if (a > b) //SE 
+          // {
+          //   Console.WriteLine("E VERDADE!");
+          // }
 
-           else if (a > c) //SENAO SE
-           {
-            Console.WriteLine("E MENOR QUE 20 E MAIOR QUE 2!");
-           }
+          //  else if (a > c) //SENAO SE
+          //  {
+          //   Console.WriteLine("E MENOR QUE 20 E MAIOR QUE 2!");
+          //  }
 
-          else //SENAO
-          {
-           Console.WriteLine("E FALSO!");
-          }
+          // else //SENAO
+          // {
+          //  Console.WriteLine("E FALSO!");
+          // }
 
-          Console.ReadLine();
+          // Console.ReadLine();
 
           //Pelo que vimos quando o if, else if e else, o programa executa a primeira condicao verdadeira 
           // que encontrar e ignora as demais.
@@ -50,32 +49,31 @@ namespace Operadores
           // Os operadores logicos mais comuns sao: && (E), || (OU) e ! (NAO).
           // Vamos ver alguns exemplos de como usar esses operadores em C#.
 
-          //           Console.WriteLine("Digite sua idade: ");
+                  Console.WriteLine("Digite sua idade: ");
 
-           //           int idade = int.Parse(Console.ReadLine());
+                  int idade = int.Parse(Console.ReadLine());
 
-
-            //           if (idade >= 0 && idade <= 12)
-            //           {
-            //             Console.WriteLine("Voce e uma crianca!");
-            //           }
-            //           else if (idade >= 13 && idade <= 17)
-            //           {
-            //             Console.WriteLine("Voce e um adolescente!");
-            //           }
-            //           else if (idade >= 18 && idade <= 59)
-            //           {
-            //             Console.WriteLine("Voce e um adulto!");
-            //           }
-            //           else if (idade >= 60)
-            //           {
-            //             Console.WriteLine("Voce e um idoso!");
-            //           }
-            //           else
-            //           {
-            //            Console.WriteLine("Idade invalida!");
-            //           }
-            //            Console.ReadLine();
+                  if (idade >= 0 && idade <= 12)
+                  {
+                  Console.WriteLine("Voce e uma crianca!");
+                  }
+                  else if (idade >= 13 && idade <= 17)
+                  {
+                  Console.WriteLine("Voce e um adolescente!");
+                  }
+                  else if (idade >= 18 && idade <= 59)
+                  {
+                   Console.WriteLine("Voce e um adulto!");
+                  }
+                  else if (idade >= 60)
+                  {
+                  Console.WriteLine("Voce e um idoso!");
+                  }
+                  else
+                  {
+                  Console.WriteLine("Idade invalida!");
+                  }
+                  Console.ReadLine();
 
         }
     }
