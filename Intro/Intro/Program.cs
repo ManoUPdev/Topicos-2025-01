@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 
-namespace Didatics
+namespace Intro
 {
  class Program
    {
@@ -12,7 +12,7 @@ namespace Didatics
      {
         // Antes de comecarmos a estudar C#, é importante entender alguns conceitos fundamentais.
         // Claro tambem e importante entender a estrutura de um programa em C#.
-        // na parte de cima do arquivo, temos o namespace Didatics, que e um contenedor de classes.
+        // na parte de cima do arquivo, temos o namespace Intro, que e um contenedor de classes.
         // O namespace e usado para organizar o codigo, e evitar conflitos de nomes entre classes.
         // Acima do namespace, temos as diretivas using, que sao chamadas de modulos ou pacotes.
         // Elas sao usadas para importar funcionalidades de outras bibliotecas, como System, que contem classes basicas do C#.
@@ -21,7 +21,7 @@ namespace Didatics
         // Uma solucao e um contenedor de projetos, que por sua vez, contem arquivos.
         // Cada projeto pode conter varios arquivos, e cada arquivo pode conter varias classes.
         // Vamos criar um exemplo simples para ilustrar isso.
-        // Vamos criar uma solucao chamada "Didatics", que contem um projeto chamado "Program.cs".
+        // Vamos criar uma solucao chamada "Intro", que contem um projeto chamado "Program.cs".
         // Dentro do projeto, vamos criar uma classe chamada "Program", que contem um metodo chamado "Main".
         // O metodo Main e o ponto de entrada do programa, ou seja, e o primeiro metodo que sera executado quando o programa for iniciado.
         // Vamos escrever um codigo simples dentro do metodo Main, que imprime uma mensagem na tela.
