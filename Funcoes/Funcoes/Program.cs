@@ -16,7 +16,7 @@ namespace Funcoes
 
         static void Main(string[] args)
         {
-            
+
             // ExibirMsg();// Chama a funcao ExibirMsg, que exibe uma mensagem na tela.
             //             // A funcao ExibirMsg nao recebe nenhum parametro, entao nao precisamos passar nada entre os parenteses.
             //             // E assim que voce pode criar funcoes em C#.
@@ -24,9 +24,21 @@ namespace Funcoes
 
             // Console.ReadLine(); // Espera o usuario pressionar uma tecla antes de fechar o programa
 
-            GerarPreco(60); // Chama a funcao GerarPreco, passando o valor 60 como parametro.
-            // A funcao GerarPreco recebe um inteiro como parametro e exibe o preco na tela.
+            //  GerarPreco(60); // Chama a funcao GerarPreco, passando o valor 60 como parametro.
+            //  GerarPreco(24); // A funcao GerarPreco recebe um inteiro como parametro e exibe o preco na tela.
+            //  GerarPreco(-3);
+            //  GerarPreco(37);
+
+            //Como vimos anteriormente, as funcoes podem receber parametros de entrada e retornar valores de saida.
+            // foram mostrados exemplos de funcoes que recebem quatro parametros e exibem mensagens na tela.
+
             Console.WriteLine();
+            
+
+           string valor = Console.ReadLine(); // Lê uma linha de texto digitada pelo usuário e armazena na variável valor
+           Console.WriteLine(valor); // Exibe o valor digitado pelo usuário
+           Console.ReadLine();
+
         }
 
         // Aqui esta a definicao da funcao ExibirMsg.
@@ -52,6 +64,7 @@ namespace Funcoes
                 Console.WriteLine(preco);
             }
 
+            
 
         } 
 
