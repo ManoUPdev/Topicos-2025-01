@@ -19,7 +19,7 @@ namespace Arrays
             // e outros tipos de dados primitivos.
             // Aqui esta um exemplo de como declarar e inicializar um array de strings.
 
-            // string produto1 = "Arroz";
+            // string produto1 = "Arroz"; // Declara uma variavel do tipo string e atribui o valor "Arroz"
             // string produto2 = "Feijao";
             // string produto3 = "Macarrao";
             // string produto4 = "Carne";
