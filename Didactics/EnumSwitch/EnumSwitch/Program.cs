@@ -26,7 +26,8 @@ namespace EnumSwitch
 
             switch ((DiaSemana)dia)
             {
-                case DiaSemana.Domingo:
+                case DiaSemana.Domingo:// O switch e usado para controlar o fluxo do programa com base no valor de uma variavel.
+                    // O enum e usado para definir um conjunto nomeado de constantes que representam os dias da semana.
                     Console.WriteLine("Domingo");
                     break;
                 case DiaSemana.Segunda:
@@ -50,11 +51,7 @@ namespace EnumSwitch
                 default:
                     Console.WriteLine("Numero invalido. Digite um numero de 1 a 7.");
                     break;
-                    // O switch verifica o valor da variavel 'dia' e executa o bloco de codigo correspondente.
-                    // Se o valor nao corresponder a nenhum dos casos, o bloco 'default' e executado.
-                    // Isso torna o codigo mais claro e facil de entender, especialmente quando ha muitos casos a serem verificados.
-                    //Enquanto o enum e usado para definir um conjunto nomeado de constantes, o switch e usado para controlar o fluxo do programa com base no valor de uma variavel.
-                    // os dois podem ser usados juntos para tornar o codigo mais legivel e facil de manter.
+                  
                     
             }
         }
