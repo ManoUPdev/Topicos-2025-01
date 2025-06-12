@@ -11,11 +11,23 @@ namespace Switch
     {
         static void Main(string[] args)
         {
-            // O que e um switch?
-            // Um switch e uma estrutura de controle que permite executar diferentes blocos de codigo
-            //  com base no valor de uma variavel ou expressao.
-            // Ele e usado para substituir uma serie de if-else if-else, tornando o codigo mais legivel.
-            // Aqui esta um exemplo de como usar um switch para verificar o dia da semana.
+            //Switch
+            // É uma forma prática de substituir vários ifs/else if
+            // quando você precisa comparar uma variável com muitos valores possíveis.
+            
+
+         // switch (variavel) {
+         //case valor1:
+         // código para quando variavel == valor1
+         //break;
+        //case valor2:
+        // código para quando variavel == valor2
+       // break;
+       //outros casos...
+       //default:
+       //  código se nenhum case acima for igual
+       // }
+
 
             // Console.WriteLine("Digite um numero de 1 a 7 para o dia da semana:");
             // int dia = int.Parse(Console.ReadLine());

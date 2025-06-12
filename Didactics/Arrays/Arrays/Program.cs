@@ -11,8 +11,21 @@ namespace Arrays
         static void Main(string[] args)
         {
             // O que e um array?
-            // Um array e uma estrutura de dados que permite armazenar varios valores do mesmo tipo
-            //  em uma unica variavel(chamada tambem de supervariavel).
+
+            //Arrays são estruturas de dados que armazenam uma 
+            //coleção de elementos (valores), geralmente do mesmo tipo, em uma única variável. 
+            // Eles permitem organizar dados de forma sequencial e acessá-los por meio de índices (posições).
+
+            //Exemplo simples:
+            //Imagine uma caixa de ovos com 12 compartimentos. Cada compartimento pode conter um ovo 
+            // — e você pode acessar qualquer um deles
+            // pela sua posição (1º, 2º, 3º, etc.). Isso é como um array.
+
+           //let frutas = ["maçã", "banana", "laranja"];
+           //console.log(frutas[1]);  // imprime "banana"
+          
+
+
             // Em C#, os arrays sao objetos que podem ser manipulados como qualquer outro objeto.
             // Anteriormente, vimos como declarar e inicializar um array de inteiros,
             //  mas os arrays podem armazenar qualquer tipo de dado, incluindo strings, objetos 

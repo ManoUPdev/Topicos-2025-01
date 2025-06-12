@@ -8,6 +8,28 @@ namespace EnumSwitch
 {
     class Program
     {
+        // EnumSwitch é um exemplo que combina o uso de enums e switch para
+        //O switch é uma estrutura de decisão que verifica o valor de uma variável 
+        // e executa o bloco correspondente ao caso (case) correspondente. 
+        // Fica muito legal com enums porque você pode tratar cada valor enum de forma clara.
+
+
+    // enum DiaSemana { Domingo, Segunda, Terca, Quarta, Quinta, Sexta, Sabado };
+
+    // enum DiaSemana hoje = Quarta;
+
+    // switch (hoje) {
+    // case Domingo:
+    //printf("Descanso!\n");
+    // break;
+    //case Quarta:
+    // printf("Dia de reunião.\n");
+    //break;
+    //default:
+   //printf("Dia normal.\n");
+   //break;
+}
+
         enum DiaSemana
         {
             Domingo = 1,
@@ -56,4 +78,4 @@ namespace EnumSwitch
             }
         }
     }
-}
+

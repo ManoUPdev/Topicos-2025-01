@@ -9,9 +9,8 @@ namespace Enum
     class Program
     {
         // O que e um enum?
-        // Um enum e um tipo de dado que permite definir um conjunto nomeado de constantes.
-        // Ele e usado para representar um conjunto fixo de valores, tornando o codigo mais legivel.
-        // Aqui esta um exemplo de como usar um enum para representar os dias da semana.
+        // Um enum é um tipo especial que permite definir um conjunto fixo de constantes nomeadas. É
+        // ótimo para representar valores limitados e claros, tipo dias da semana, estados, cores, etc.
 
         enum DiaDaSemana 
         {

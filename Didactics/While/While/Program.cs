@@ -18,6 +18,25 @@ namespace While
     //     // Bloco de código a ser executado
     // }
 
+//obs
+
+// | Característica | while                                                          | do while                                    |
+// | -------------- | -------------------------------------------------------------- | ------------------------------------------- |
+// | Testa condição | Antes da execução do bloco                                     | Depois da execução do bloco                 |
+// | Executa bloco? | Pode não executar nenhuma vez                                  | Executa pelo menos uma vez                  |
+// | Uso comum      | Quando não tem certeza se o código deve rodar ao menos uma vez | Quando o código deve rodar ao menos uma vez |
+
+// Característica	           while	               if/else
+//                        Tipo	Loop| (repetição)	Decisão (condicional)
+// Executa quantas vezes?|	Pode repetir várias vezes	Executa só uma vez
+// Função |principal	    Repetir ações	             Escolher entre caminhos
+
+
+
+
+
+
+
     class Program
     {
         static void Main(string[] args)

@@ -6,48 +6,45 @@ using System.Threading.Tasks;
 
 namespace Funcoes
 {
-    // Funcoes sao blocos de codigo que podem ser chamados em diferentes partes do programa.
-    // Elas permitem que voce escreva codigo reutilizavel e modular, facilitando a manutencao e a extensibilidade do programa.
-    // As funcoes podem receber parametros de entrada e retornar valores de saida.
-    // Para criar uma funcao em C#, voce deve definir o tipo de retorno, o nome da funcao e os parametros de entrada (se houver).
-    // Aqui esta um exemplo de funcao que recebe uma string como parametro e exibe uma mensagem na tela.
-    class Program
+    //Funções são blocos de código que realizam uma tarefa específica.
+    // Você pode chamar essa função várias vezes no programa para evitar repetir código.
+       class Program
     {
 
         static void Main(string[] args)
         {
-        // ExibirMsg();// Chama a funcao ExibirMsg, que exibe uma mensagem na tela.
-        //             // A funcao ExibirMsg nao recebe nenhum parametro, entao nao precisamos passar nada entre os parenteses.
-        //             // E assim que voce pode criar funcoes em C#.
-        //             // Voce pode criar funcoes que recebem parametros, como por exemplo uma funcao que recebe um numero inteiro e retorna o dobro desse numero.
+            // ExibirMsg();// Chama a funcao ExibirMsg, que exibe uma mensagem na tela.
+            //             // A funcao ExibirMsg nao recebe nenhum parametro, entao nao precisamos passar nada entre os parenteses.
+            //             // E assim que voce pode criar funcoes em C#.
+            //             // Voce pode criar funcoes que recebem parametros, como por exemplo uma funcao que recebe um numero inteiro e retorna o dobro desse numero.
 
-        // Console.ReadLine(); // Espera o usuario pressionar uma tecla antes de fechar o programa
+            // Console.ReadLine(); // Espera o usuario pressionar uma tecla antes de fechar o programa
 
-        //  GerarPreco(60); // Chama a funcao GerarPreco, passando o valor 60 como parametro.
-        //  GerarPreco(24); // A funcao GerarPreco recebe um inteiro como parametro e exibe o preco na tela.
-        //  GerarPreco(-3);
-        //  GerarPreco(37);
+            //  GerarPreco(60); // Chama a funcao GerarPreco, passando o valor 60 como parametro.
+            //  GerarPreco(24); // A funcao GerarPreco recebe um inteiro como parametro e exibe o preco na tela.
+            //  GerarPreco(-3);
+            //  GerarPreco(37);
 
-        //Como vimos anteriormente, as funcoes podem receber parametros de entrada e retornar valores de saida.
-        // foram mostrados exemplos de funcoes que recebem quatro parametros e exibem mensagens na tela.
+            //Como vimos anteriormente, as funcoes podem receber parametros de entrada e retornar valores de saida.
+            // foram mostrados exemplos de funcoes que recebem quatro parametros e exibem mensagens na tela.
 
-        // string valor = Console.ReadLine(); // Lê uma linha de texto digitada pelo usuário
-        // Console.WriteLine(valor); // Exibe o valor lido na tela
-        // Console.ReadLine(); // Espera o usuário pressionar uma tecla antes de fechar o programa
+            // string valor = Console.ReadLine(); // Lê uma linha de texto digitada pelo usuário
+            // Console.WriteLine(valor); // Exibe o valor lido na tela
+            // Console.ReadLine(); // Espera o usuário pressionar uma tecla antes de fechar o programa
 
-        //  Aqui esta um exemplo de retorno de uma funcao.
-        // Console.WriteLine(Math.Abs(-7)); // Exibe o valor absoluto de -3, que e 3.
-        // Console.ReadLine(); // Espera o usuario pressionar uma tecla antes de fechar o programa
-        // A funcao Math.Abs recebe um numero inteiro como parametro e retorna o valor absoluto desse numero.
-        // Voce pode usar essa funcao para obter o valor absoluto de qualquer numero inteiro, positivo ou negativo.
+            //  Aqui esta um exemplo de retorno de uma funcao.
+            // Console.WriteLine(Math.Abs(-7)); // Exibe o valor absoluto de -3, que e 3.
+            // Console.ReadLine(); // Espera o usuario pressionar uma tecla antes de fechar o programa
+            // A funcao Math.Abs recebe um numero inteiro como parametro e retorna o valor absoluto desse numero.
+            // Voce pode usar essa funcao para obter o valor absoluto de qualquer numero inteiro, positivo ou negativo.
 
-        int soma1 = Somar(1, 2, 3); // A funcao Somar recebe tres inteiros como parametros e retorna a soma deles.
-        int soma2 = Somar(10, 20, 30); // Voce pode chamar essa funcao passando qualquer valor inteiro, e ela retornara a soma deles.
-        int soma3 = Somar(100, 200, 300); // Por exemplo, se voce passar os valores 1, 2 e 3, ela retornara 6.
+            int soma1 = Somar(1, 2, 3); // A funcao Somar recebe tres inteiros como parametros e retorna a soma deles.
+            int soma2 = Somar(10, 20, 30); // Voce pode chamar essa funcao passando qualquer valor inteiro, e ela retornara a soma deles.
+            int soma3 = Somar(100, 200, 300); // Por exemplo, se voce passar os valores 1, 2 e 3, ela retornara 6.
 
-        Console.WriteLine(soma1); // Exibe o resultado da funcao Somar na tela.
-        Console.WriteLine(soma2); // Exibe o resultado da funcao Somar na tela.
-        Console.WriteLine(soma3); // Exibe o resultado da funcao Somar na tela. 
+            Console.WriteLine(soma1); // Exibe o resultado da funcao Somar na tela.
+            Console.WriteLine(soma2); // Exibe o resultado da funcao Somar na tela.
+            Console.WriteLine(soma3); // Exibe o resultado da funcao Somar na tela. 
         }
 
         // Aqui esta a definicao da funcao ExibirMsg.
